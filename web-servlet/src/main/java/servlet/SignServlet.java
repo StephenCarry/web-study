@@ -20,9 +20,9 @@ public class SignServlet extends HttpServlet {
         res.setContentType("text/html");
         PrintWriter printWriter = res.getWriter();
         printWriter.write("<h1>Sign in</h1>");
-        printWriter.write("<form action=\"/web_servlet_war/\" method=\"post\">");
+        printWriter.write("<form action=\"/sign\" method=\"post\">");
         printWriter.write("<p>User:<input name=\"username\"></p>");
-        printWriter.write("<p>Password:<input password=\"password\" type=\"password\"</p>");
+        printWriter.write("<p>Password:<input name=\"password\" type=\"password\"</p>");
         printWriter.write("<p><button type=\"submit\">Sign In</button></p>");
         printWriter.write("</form>");
         printWriter.flush();
@@ -34,6 +34,7 @@ public class SignServlet extends HttpServlet {
         String result = map.get(username);
         if (result!=null && result.equals(password)) {
             req.getSession().setAttribute("username", username);
+            res.sendRedirect("/basic?name="+username);
         } else {
             res.sendError(HttpServletResponse.SC_FORBIDDEN);
         }
