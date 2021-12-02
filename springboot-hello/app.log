@@ -1,0 +1,288 @@
+2021-05-26 18:49:59.506  INFO 13604 --- [main] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 13604 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-26 18:49:59.522  INFO 13604 --- [main] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-26 18:50:00.424  INFO 13604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-26 18:50:00.439  INFO 13604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-26 18:50:00.439  INFO 13604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-26 18:50:00.508  INFO 13604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-26 18:50:00.508  INFO 13604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
+2021-05-26 18:50:00.593  WARN 13604 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-26 18:50:00.593  INFO 13604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-26 18:50:00.849  INFO 13604 --- [main] hsqldb.db.HSQLDB79A84BA708.ENGINE        : Checkpoint start
+2021-05-26 18:50:00.849  INFO 13604 --- [main] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-26 18:50:00.849  INFO 13604 --- [main] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-26 18:50:00.849  INFO 13604 --- [main] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-26 18:50:00.865  INFO 13604 --- [main] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-26 18:50:00.865  INFO 13604 --- [main] hsqldb.db.HSQLDB79A84BA708.ENGINE        : Checkpoint end - txts: 1
+2021-05-26 18:50:00.880  INFO 13604 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-26 18:50:00.880  INFO 13604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-26 18:50:01.070  INFO 13604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-26 18:50:01.403  INFO 13604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-26 18:50:01.419  INFO 13604 --- [main] com.itranswarp.learnjava.Application     : Started Application in 2.392 seconds (JVM running for 3.257)
+2021-05-26 18:50:09.174  INFO 13604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-26 18:50:09.175  INFO 13604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-26 18:50:09.177  INFO 13604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-26 18:50:09.321  WARN 13604 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [125] milliseconds.
+2021-05-26 19:04:19.789  INFO 13604 --- [http-nio-8080-exec-8] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-26 19:04:38.221  INFO 13604 --- [http-nio-8080-exec-2] c.i.learnjava.service.UserService        : try register by heyyaoo@qq.com...
+2021-05-26 19:04:38.225  INFO 13604 --- [http-nio-8080-exec-2] c.i.learnjava.web.UserController         : user registered: heyyaoo@qq.com
+2021-05-26 19:04:41.871  INFO 13604 --- [http-nio-8080-exec-4] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-26 19:05:12.517  INFO 13604 --- [http-nio-8080-exec-4] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:38:23.186  INFO 13412 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 13412 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-27 13:38:23.186  INFO 13412 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-27 13:38:23.240  INFO 13412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-27 13:38:23.240  INFO 13412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-27 13:38:24.273  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 13:38:24.273  INFO 13412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 13:38:24.273  INFO 13412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-27 13:38:24.327  INFO 13412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-27 13:38:24.327  INFO 13412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
+2021-05-27 13:38:24.427  WARN 13412 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-27 13:38:24.427  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 13:38:24.721  INFO 13412 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-27 13:38:24.721  INFO 13412 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-27 13:38:24.728  INFO 13412 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-27 13:38:24.743  INFO 13412 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-27 13:38:24.743  INFO 13412 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-27 13:38:24.743  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 13:38:24.890  INFO 13412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 13:38:25.091  INFO 13412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-27 13:38:25.107  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-27 13:38:25.129  INFO 13412 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 2.54 seconds (JVM running for 3.495)
+2021-05-27 13:38:33.601  INFO 13412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 13:38:33.603  INFO 13412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 13:38:33.604  INFO 13412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-27 13:38:33.749  WARN 13412 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [124] milliseconds.
+2021-05-27 13:38:48.000  INFO 13412 --- [http-nio-8080-exec-7] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:38:51.857  INFO 13412 --- [http-nio-8080-exec-8] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:40:09.669  INFO 13412 --- [http-nio-8080-exec-2] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:40:17.041  INFO 13412 --- [http-nio-8080-exec-5] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:47:40.672  INFO 13412 --- [http-nio-8080-exec-6] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:52:19.040  INFO 13412 --- [http-nio-8080-exec-9] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:52:31.948  INFO 12092 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 12092 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-27 13:52:31.948  INFO 12092 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-27 13:52:31.995  INFO 12092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-27 13:52:31.995  INFO 12092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-27 13:52:32.797  INFO 12092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 13:52:32.813  INFO 12092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 13:52:32.813  INFO 12092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-27 13:52:32.866  INFO 12092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-27 13:52:32.866  INFO 12092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 871 ms
+2021-05-27 13:52:32.950  WARN 12092 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-27 13:52:32.950  INFO 12092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 13:52:35.174  INFO 12092 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-27 13:52:35.174  INFO 12092 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-27 13:52:35.189  INFO 12092 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-27 13:52:35.189  INFO 12092 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-27 13:52:35.204  INFO 12092 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-27 13:52:35.204  INFO 12092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 13:52:35.336  INFO 12092 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 13:52:35.505  INFO 12092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-27 13:52:35.536  INFO 12092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-27 13:52:35.552  INFO 12092 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 4.015 seconds (JVM running for 4.837)
+2021-05-27 13:52:55.061  INFO 12092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 13:52:55.062  INFO 12092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 13:52:55.062  INFO 12092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-27 13:52:55.208  WARN 12092 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [128] milliseconds.
+2021-05-27 13:53:00.335  INFO 12092 --- [http-nio-8080-exec-6] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:53:14.162  INFO 12092 --- [http-nio-8080-exec-9] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:59:13.097  INFO 12092 --- [http-nio-8080-exec-8] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 13:59:23.429  INFO 10844 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 10844 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-27 13:59:23.429  INFO 10844 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-27 13:59:23.483  INFO 10844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-27 13:59:23.483  INFO 10844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-27 13:59:24.297  INFO 10844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 13:59:24.304  INFO 10844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 13:59:24.304  INFO 10844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-27 13:59:24.358  INFO 10844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-27 13:59:24.358  INFO 10844 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 875 ms
+2021-05-27 13:59:24.432  WARN 10844 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-27 13:59:24.433  INFO 10844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 13:59:25.654  INFO 10844 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-27 13:59:25.655  INFO 10844 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-27 13:59:25.663  INFO 10844 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-27 13:59:25.671  INFO 10844 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-27 13:59:25.676  INFO 10844 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-27 13:59:25.678  INFO 10844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 13:59:25.808  INFO 10844 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 13:59:26.018  INFO 10844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-27 13:59:26.044  INFO 10844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-27 13:59:26.054  INFO 10844 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 3.035 seconds (JVM running for 3.785)
+2021-05-27 13:59:26.116  INFO 10844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 13:59:26.117  INFO 10844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 13:59:26.117  INFO 10844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-27 13:59:26.288  WARN 10844 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [153] milliseconds.
+2021-05-27 14:06:54.576  INFO 10844 --- [http-nio-8080-exec-8] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 14:21:13.688  INFO 1064 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 1064 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-27 14:21:13.691  INFO 1064 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-27 14:21:13.751  INFO 1064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-27 14:21:13.751  INFO 1064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-27 14:21:14.560  INFO 1064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 14:21:14.570  INFO 1064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 14:21:14.570  INFO 1064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-27 14:21:14.622  INFO 1064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-27 14:21:14.622  INFO 1064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 870 ms
+2021-05-27 14:21:14.697  WARN 1064 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-27 14:21:14.698  INFO 1064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 14:21:15.947  INFO 1064 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-27 14:21:15.948  INFO 1064 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-27 14:21:15.957  INFO 1064 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-27 14:21:15.965  INFO 1064 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-27 14:21:15.969  INFO 1064 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-27 14:21:15.971  INFO 1064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 14:21:16.110  INFO 1064 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 14:21:16.284  INFO 1064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-27 14:21:16.311  INFO 1064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-27 14:21:16.320  INFO 1064 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 3.102 seconds (JVM running for 3.93)
+2021-05-27 14:21:16.435  INFO 1064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 14:21:16.437  INFO 1064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 14:21:16.438  INFO 1064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-27 14:21:16.631  WARN 1064 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [170] milliseconds.
+2021-05-27 14:21:38.473  INFO 1064 --- [http-nio-8080-exec-4] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 14:23:25.915  INFO 9672 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 9672 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-27 14:23:25.915  INFO 9672 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-27 14:23:25.961  INFO 9672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-27 14:23:25.961  INFO 9672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-27 14:23:26.748  INFO 9672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 14:23:26.748  INFO 9672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 14:23:26.748  INFO 9672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-27 14:23:26.801  INFO 9672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-27 14:23:26.801  INFO 9672 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2021-05-27 14:23:26.879  WARN 9672 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-27 14:23:26.879  INFO 9672 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 14:23:27.079  INFO 9672 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-27 14:23:27.079  INFO 9672 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-27 14:23:27.079  INFO 9672 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-27 14:23:27.095  INFO 9672 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-27 14:23:27.102  INFO 9672 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-27 14:23:27.102  INFO 9672 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 14:23:27.218  INFO 9672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 14:23:27.402  INFO 9672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-27 14:23:27.433  INFO 9672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-27 14:23:27.449  INFO 9672 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 1.958 seconds (JVM running for 2.722)
+2021-05-27 14:24:13.327  INFO 9672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 14:24:13.328  INFO 9672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 14:24:13.328  INFO 9672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-27 14:24:13.462  WARN 9672 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [118] milliseconds.
+2021-05-27 14:24:19.302  INFO 9672 --- [http-nio-8080-exec-6] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 14:24:39.598  INFO 9672 --- [http-nio-8080-exec-8] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 14:32:02.853  INFO 10036 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 10036 (C:\Users\Yaoo\Desktop\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\Desktop\springboot-hello)
+2021-05-27 14:32:02.856  INFO 10036 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-05-27 14:32:02.911  INFO 10036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-27 14:32:02.911  INFO 10036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-27 14:32:03.760  INFO 10036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 14:32:03.768  INFO 10036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 14:32:03.768  INFO 10036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-27 14:32:03.829  INFO 10036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-27 14:32:03.829  INFO 10036 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 917 ms
+2021-05-27 14:32:03.915  WARN 10036 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-05-27 14:32:03.915  INFO 10036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 14:32:07.196  INFO 10036 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-05-27 14:32:07.196  INFO 10036 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-05-27 14:32:07.206  INFO 10036 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-05-27 14:32:07.216  INFO 10036 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-05-27 14:32:07.221  INFO 10036 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-05-27 14:32:07.223  INFO 10036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 14:32:07.391  INFO 10036 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 14:32:07.572  INFO 10036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-27 14:32:07.600  INFO 10036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-27 14:32:07.609  INFO 10036 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 5.198 seconds (JVM running for 6.018)
+2021-05-27 14:32:07.782  INFO 10036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 14:32:07.783  INFO 10036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 14:32:07.784  INFO 10036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-27 14:32:07.924  WARN 10036 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [123] milliseconds.
+2021-05-27 14:32:13.669  INFO 10036 --- [http-nio-8080-exec-3] c.i.learnjava.service.UserService        : try login by heyyaoo@qq.com...
+2021-05-27 15:07:04.150  WARN 10036 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m26s593ms249µs600ns).
+2021-05-27 16:28:50.867  WARN 10036 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s168ms899µs).
+2021-07-27 11:19:04.516  INFO 16288 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 16288 (C:\Users\Yaoo\spring-study\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\spring-study\springboot-hello)
+2021-07-27 11:19:04.519  INFO 16288 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-07-27 11:19:04.576  INFO 16288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-27 11:19:04.576  INFO 16288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-27 11:19:05.570  INFO 16288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-27 11:19:05.580  INFO 16288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-27 11:19:05.580  INFO 16288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-27 11:19:05.657  INFO 16288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-27 11:19:05.657  INFO 16288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1080 ms
+2021-07-27 11:19:05.777  WARN 16288 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-07-27 11:19:05.778  INFO 16288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-27 11:19:06.083  INFO 16288 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-07-27 11:19:06.083  INFO 16288 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-07-27 11:19:06.094  INFO 16288 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-07-27 11:19:06.106  INFO 16288 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-07-27 11:19:06.114  INFO 16288 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-07-27 11:19:06.119  INFO 16288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-27 11:19:06.323  INFO 16288 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-27 11:19:06.577  INFO 16288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-27 11:19:06.623  INFO 16288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-27 11:19:06.643  INFO 16288 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 2.845 seconds (JVM running for 4.143)
+2021-07-27 11:21:11.803  INFO 1680 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 1680 (C:\Users\Yaoo\spring-study\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\spring-study\springboot-hello)
+2021-07-27 11:21:11.806  INFO 1680 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-07-27 11:21:11.869  INFO 1680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-27 11:21:11.869  INFO 1680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-27 11:21:12.790  INFO 1680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-27 11:21:12.799  INFO 1680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-27 11:21:12.799  INFO 1680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-27 11:21:12.878  INFO 1680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-27 11:21:12.878  INFO 1680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2021-07-27 11:21:12.992  WARN 1680 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-07-27 11:21:12.992  INFO 1680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-27 11:21:13.197  INFO 1680 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-07-27 11:21:13.198  INFO 1680 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-07-27 11:21:13.208  INFO 1680 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-07-27 11:21:13.222  INFO 1680 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-07-27 11:21:13.230  INFO 1680 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-07-27 11:21:13.234  INFO 1680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-27 11:21:13.480  INFO 1680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-27 11:21:13.725  INFO 1680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-27 11:21:13.771  INFO 1680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-27 11:21:13.781  INFO 1680 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 2.507 seconds (JVM running for 4.518)
+2021-07-27 11:22:58.492  INFO 1680 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-27 11:22:58.492  INFO 1680 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-07-27 11:22:58.492  INFO 1680 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-07-27 11:23:04.476  INFO 12744 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 12744 (C:\Users\Yaoo\spring-study\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\spring-study\springboot-hello)
+2021-07-27 11:23:04.480  INFO 12744 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-07-27 11:23:04.568  INFO 12744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-27 11:23:04.569  INFO 12744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-27 11:23:05.837  INFO 12744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-27 11:23:05.854  INFO 12744 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-27 11:23:05.855  INFO 12744 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-27 11:23:05.931  INFO 12744 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-27 11:23:05.932  INFO 12744 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1361 ms
+2021-07-27 11:23:06.058  WARN 12744 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-07-27 11:23:06.059  INFO 12744 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-27 11:23:06.274  INFO 12744 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-07-27 11:23:06.275  INFO 12744 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-07-27 11:23:06.283  INFO 12744 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-07-27 11:23:06.288  INFO 12744 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-07-27 11:23:06.292  INFO 12744 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-07-27 11:23:06.294  INFO 12744 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-27 11:23:06.484  INFO 12744 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-27 11:23:06.743  INFO 12744 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-07-27 11:23:06.761  INFO 12744 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-27 11:23:06.810  INFO 12744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-27 11:23:06.810  INFO 12744 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 3.233 seconds (JVM running for 4.843)
+2021-07-27 11:24:13.392  INFO 12744 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-07-27 11:24:13.392  INFO 12744 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-27 11:24:13.392  INFO 12744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-07-27 11:24:13.406  INFO 12744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-07-27 11:24:20.121  INFO 10152 --- [restartedMain] com.itranswarp.learnjava.Application     : Starting Application using Java 11 on LAPTOP-52M8AS78 with PID 10152 (C:\Users\Yaoo\spring-study\springboot-hello\target\classes started by Yaoo in C:\Users\Yaoo\spring-study\springboot-hello)
+2021-07-27 11:24:20.121  INFO 10152 --- [restartedMain] com.itranswarp.learnjava.Application     : No active profile set, falling back to default profiles: default
+2021-07-27 11:24:20.190  INFO 10152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-27 11:24:20.190  INFO 10152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-27 11:24:21.154  INFO 10152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-27 11:24:21.161  INFO 10152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-27 11:24:21.161  INFO 10152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-27 11:24:21.207  INFO 10152 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-27 11:24:21.207  INFO 10152 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1017 ms
+2021-07-27 11:24:21.308  WARN 10152 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-07-27 11:24:21.308  INFO 10152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-27 11:24:21.542  INFO 10152 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose start
+2021-07-27 11:24:21.542  INFO 10152 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose synched
+2021-07-27 11:24:21.558  INFO 10152 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose script done
+2021-07-27 11:24:21.561  INFO 10152 --- [restartedMain] hsqldb.db.HSQLDB79A84BA708.ENGINE        : checkpointClose end
+2021-07-27 11:24:21.561  INFO 10152 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-07-27 11:24:21.577  INFO 10152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-27 11:24:21.740  INFO 10152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-27 11:24:21.909  INFO 10152 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-07-27 11:24:21.940  INFO 10152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-27 11:24:21.962  INFO 10152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-27 11:24:21.978  INFO 10152 --- [restartedMain] com.itranswarp.learnjava.Application     : Started Application in 2.493 seconds (JVM running for 3.708)

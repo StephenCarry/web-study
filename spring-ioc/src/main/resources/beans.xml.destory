@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.yaoo.pojo.User">
+        <property name="name" value="Spring"/>
+    </bean>
+
+    <bean id="mysqlDaoImpl" class="com.yaoo.dao.impl.MySqlDaoImpl"/>
+
+    <bean id="db2DaoImpl" class="com.yaoo.dao.impl.Db2DaoImpl"/>
+
+    <bean id="userService" class="com.yaoo.serivce.UserService">
+        <constructor-arg name="dao" ref="db2DaoImpl"/>
+        <property name="dao" ref="mysqlDaoImpl"/>
+<!--        <property name="dao" ref="db2DaoImpl"/>-->
+    </bean>
+
+</beans>
