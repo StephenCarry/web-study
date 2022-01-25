@@ -1,14 +1,25 @@
+// 引入java插件
 plugins {
     id 'java'
 }
 
+// 包结构名称
 group 'com.yaoo'
+
+// 打包构建版本
 version '1.0-SNAPSHOT'
 
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+// 依赖仓库
 repositories {
     mavenCentral()
 }
 
+// 依赖信息
 dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'org.quartz-scheduler:quartz:2.3.0'
