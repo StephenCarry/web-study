@@ -129,9 +129,13 @@ public class UserLoginDao {
                     if (resultSet.next()) n = resultSet.getLong(1);
                 }
             }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
         }
         return n;
+    }
+
+    public List<UserLogin> queryListByPlus() {
+        return userLoginMapper.selectList(null);
     }
 }

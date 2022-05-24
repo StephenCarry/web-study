@@ -1,22 +1,23 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.79.157.239:3306/dev?setUnicode=true&characterEncoding=utf8
-    username: root
-    password: hy10236
-#    hsql:
-#      driver-class-name: org.hsqldb.jdbc.JDBCDriver
-#      jdbc-url: jdbc:hsqldb:file:testdb
-#      username: sa
-#      password:
-#    hikari:
-#      auto-commit: false
-#      connection-timeout: 3000
-#      validation-timeout: 3000
-#      max-lifetime: 60000
-#      maximum-pool-size: 20
-#      minimum-idle: 1
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem://localhost/testdb;shutdown=true
+    username: sa
+    password: d41d8cd98f00b204e9800998ecf8427e
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    initialization-mode: always
+    hikari:
+      auto-commit: false
+      connection-timeout: 3000
+      validation-timeout: 3000
+      max-lifetime: 60000
+      maximum-pool-size: 20
+      minimum-idle: 1
   redis:
-    host: 120.79.157.239
+    host: 120.24.218.7
     port: 6379
     database: 0
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

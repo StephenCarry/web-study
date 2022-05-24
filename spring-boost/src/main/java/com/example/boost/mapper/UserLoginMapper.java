@@ -1,5 +1,6 @@
 package com.example.boost.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.boost.entry.UserLogin;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
@@ -7,8 +8,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserLoginMapper {
-    @Select("select * from user_login")
+public interface UserLoginMapper extends BaseMapper<UserLogin> {
+    @Select("select id, user_code as userCode, user_password as userPassword from user_login")
     List<UserLogin> query();
 
     @Select("select * from user_login where id = #{idd}")

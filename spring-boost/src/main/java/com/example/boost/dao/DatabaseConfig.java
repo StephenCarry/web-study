@@ -1,5 +1,6 @@
 package com.example.boost.dao;
 
+import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -69,10 +70,10 @@ public class DatabaseConfig {
     }
     //mybatis
     @Bean
-    public SqlSessionFactoryBean createSqlSessionFactory(@Autowired DataSource dataSource) {
-        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+    public SqlSessionFactory createSqlSessionFactory(@Autowired DataSource dataSource) throws Exception {
+        MybatisSqlSessionFactoryBean sqlSessionFactoryBean = new MybatisSqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
-        return sqlSessionFactoryBean;
+        return sqlSessionFactoryBean.getObject();
     }
     @Value("${spring.datasource.url}")
     public void setURL(String URL) {

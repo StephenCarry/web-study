@@ -41,4 +41,11 @@ public class UserLoginAction {
         map.put("id",userLoginDao.insert(map));
         return userLoginDao.insert(map);
     }
+
+    @RequestMapping("/plus")
+    @ResponseBody
+    public List<UserLogin> getListPlus()  {
+        return userLoginDao.queryListByPlus();
+    }
+
 }

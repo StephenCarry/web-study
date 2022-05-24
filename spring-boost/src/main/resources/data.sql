@@ -1,0 +1,1 @@
+INSERT INTO user_login(id,user_code,user_password) VALUES(1,'root','root');
