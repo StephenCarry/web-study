@@ -1,4 +1,4 @@
-package com.yaoo;
+package com.yaoo.http;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
@@ -11,7 +11,7 @@ import java.util.Date;
 public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, FullHttpRequest fullHttpRequest) {
-        System.out.println("class: "+fullHttpRequest.getClass().getName()+new Date().getTime());
+        System.out.println("class: "+fullHttpRequest.getClass().getName()+" time: "+new Date().getTime());
 
         DefaultFullHttpResponse response = new DefaultFullHttpResponse(
                 HttpVersion.HTTP_1_1,
@@ -25,5 +25,12 @@ public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         headers.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
 
         channelHandlerContext.write(response);
+    }
+
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("read complete: "+ctx);
+        super.channelReadComplete(ctx);
+        ctx.flush();
     }
 }

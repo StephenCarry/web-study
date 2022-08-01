@@ -1,8 +1,7 @@
-package com.yaoo;
+package com.yaoo.http;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -24,8 +23,7 @@ public class NettyHttpServer {
 
     public void start() throws InterruptedException {
         ServerBootstrap serverBootstrap = new ServerBootstrap();
-        NioEventLoopGroup nioEventLoopGroup = new NioEventLoopGroup();
-        serverBootstrap.group(nioEventLoopGroup)
+        serverBootstrap.group(new NioEventLoopGroup())
                 .channel(NioServerSocketChannel.class)
                 .childHandler(new ChannelInitializer<SocketChannel>() {
                     @Override
