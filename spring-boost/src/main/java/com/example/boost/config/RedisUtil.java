@@ -1,4 +1,4 @@
-package com.example.boost.utils;
+package com.example.boost.config;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

@@ -2,6 +2,7 @@ package com.example.boost.dao;
 
 import com.example.boost.entry.UserLogin;
 import com.example.boost.mapper.UserLoginMapper;
+import com.example.boost.config.DatabaseConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,7 +12,6 @@ import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
 
-import javax.annotation.Resource;
 import java.sql.*;
 import java.util.*;
 
