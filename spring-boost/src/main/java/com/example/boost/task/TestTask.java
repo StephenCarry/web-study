@@ -10,11 +10,11 @@ import java.util.concurrent.Executors;
 @Component
 public class TestTask implements Runnable {
 
-    private static final ExecutorService threadPool = Executors.newFixedThreadPool(1);
+    private static final ExecutorService threadPool = Executors.newFixedThreadPool(5);
 
     @Scheduled(fixedDelay = 10*1000L)
     public void trigger() {
-        threadPool.submit(this);
+        this.run();
     }
 
     @Override
