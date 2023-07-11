@@ -12,7 +12,7 @@ public class TestTask implements Runnable {
 
     private static final ExecutorService threadPool = Executors.newFixedThreadPool(5);
 
-    @Scheduled(fixedDelay = 10*1000L)
+    @Scheduled(fixedDelay = 3600*1000L)
     public void trigger() {
         this.run();
     }
