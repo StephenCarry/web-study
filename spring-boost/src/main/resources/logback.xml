@@ -15,13 +15,13 @@
             <charset>utf8</charset>
         </encoder>
         <file>app.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <maxIndex>1</maxIndex>
-            <fileNamePattern>app.log.%i</fileNamePattern>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>app。%d{yyyy-MM-dd HH}.log.%i</fileNamePattern>
+            <maxHistory>3</maxHistory>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+            <maxFileSize>10KB</maxFileSize>
+            <totalSizeCap>100KB</totalSizeCap>
         </rollingPolicy>
-        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>1MB</MaxFileSize>
-        </triggeringPolicy>
     </appender>
 
     <root level="INFO">
