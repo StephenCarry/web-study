@@ -10,5 +10,8 @@
 ### VS Code ###
 .vscode/
 
+### out ###
+target/
+
 ### User ###
-app.log
+logs/

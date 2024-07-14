@@ -2,6 +2,9 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/defaults.xml" />
 
+    <property name="LOG_FILE" value="logs" />
+    <property name="LOG_ARCHIVED" value="${LOG_FILE}/archived/%d{yyyyMMdd}" />
+
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
@@ -9,23 +12,23 @@
         </encoder>
     </appender>
 
-    <appender name="APP_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="LOGFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder>
             <pattern>${FILE_LOG_PATTERN}</pattern>
             <charset>utf8</charset>
         </encoder>
-        <file>app.log</file>
+        <file>${LOG_FILE}/app.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>app。%d{yyyy-MM-dd HH}.log.%i</fileNamePattern>
+            <fileNamePattern>${LOG_ARCHIVED}/app.log.%i</fileNamePattern>
             <maxHistory>3</maxHistory>
             <cleanHistoryOnStart>true</cleanHistoryOnStart>
-            <maxFileSize>10KB</maxFileSize>
-            <totalSizeCap>100KB</totalSizeCap>
+            <maxFileSize>1MB</maxFileSize>
+            <totalSizeCap>10MB</totalSizeCap>
         </rollingPolicy>
     </appender>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
-        <appender-ref ref="APP_LOG" />
+        <appender-ref ref="LOGFILE" />
     </root>
 </configuration>
