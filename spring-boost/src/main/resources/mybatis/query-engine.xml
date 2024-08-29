@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service name="TEST">
     <!-- 入参一个HashMap，方便Mybatis取值，支持中间过程修改HashMap内容 -->
+    <request>
+        <value />
+    </request>
     <!-- 默认按顺序执行 -->
     <query database="testdb1" result="result_1" timeout="" limit="">
         <count>
