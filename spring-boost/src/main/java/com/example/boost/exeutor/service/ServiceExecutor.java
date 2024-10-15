@@ -25,8 +25,12 @@ public class ServiceExecutor {
 
     public Object execute() {
         if (nodes.isEmpty()) {
-            // 报错
+            System.out.println("No nodes found for service: " + serviceId);
         }
         return null;
+    }
+
+    public void setServiceId(String serviceId) {
+        this.serviceId = serviceId;
     }
 }

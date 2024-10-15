@@ -16,9 +16,7 @@
     </query>
     <!-- 中间脚本 -->
     <script type="groovy" result="result_2">
-        xxxxx;
-        xxxxx;
-        xxxxx;
+        println(result_1);
     </script>
     <!-- 最后执行的查询 -->
     <query result="result_3">
