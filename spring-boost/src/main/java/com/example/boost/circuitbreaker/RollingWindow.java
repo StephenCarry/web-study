@@ -14,7 +14,8 @@ public class RollingWindow {
             rollingWindow.add(1);
             Thread.sleep(200);
         }
-        rollingWindow.reduce();
+        Stat nowStat = rollingWindow.reduce();
+        System.out.println(nowStat);
     }
 
     private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
@@ -64,7 +65,8 @@ public class RollingWindow {
     /**
      * 汇总窗口数据
      */
-    public void reduce() {
+    public Stat reduce() {
+        Stat stat = new Stat(0L, 0L);
         try {
             lock.readLock().lock();
             // 汇总数据前判断哪些桶无需统计
@@ -79,11 +81,12 @@ public class RollingWindow {
             // 如果存在未过期的桶则汇总数据
             if (diff > 0) {
                 int start = (offset + span + 1) % size;
-                this.reduceBucket(start, diff);
+                stat = this.reduceBucket(start, diff);
             }
         } finally {
             lock.readLock().unlock();
         }
+        return stat;
     }
 
     /**
@@ -137,17 +140,15 @@ public class RollingWindow {
         return size;
     }
 
-    private void reduceBucket(int start, int count) {
+    private Stat reduceBucket(int start, int count) {
         long success = 0;
         long total = 0;
         for (int i = 0; i < count; i++) {
             Bucket bucket = buckets[(start + i) % size];
             success+=bucket.getValue();
-            total+=bucket.getValue();
+            total+=bucket.getCount();
         }
-        // 测试打印
-        System.out.println("count="+success);
-        System.out.println("sum="+total);
+        return new Stat(total, success);
     }
 
     private void addBucket(int offset, long value) {

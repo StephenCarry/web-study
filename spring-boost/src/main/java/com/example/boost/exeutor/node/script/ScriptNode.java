@@ -9,6 +9,10 @@ public class ScriptNode extends AbstractNode {
 
     protected String scriptContext;
 
+    public ScriptNode(String id) {
+        super(id);
+    }
+
     @Override
     public void execute() {
         GroovyShell groovyShell = new GroovyShell();

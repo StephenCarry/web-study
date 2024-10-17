@@ -5,7 +5,7 @@
         <value />
     </request>
     <!-- 默认按顺序执行 -->
-    <query database="testdb1" result="result_1" timeout="" limit="">
+    <query id="query1" database="testdb1" timeout="" limit="">
         <count>
             select count(1) where id > 0 limit 1
         </count>
@@ -15,11 +15,11 @@
         </select>
     </query>
     <!-- 中间脚本 -->
-    <script type="groovy" result="result_2">
+    <script id="result_2" type="groovy">
         println(result_1);
     </script>
     <!-- 最后执行的查询 -->
-    <query result="result_3">
+    <query id="result_3">
         <select>
             select
                 id,user_code
@@ -36,9 +36,10 @@
         </resultMap>
     </query>
     <!-- 若未指定response，默认取最后一个<query>的返回值result_3（List<Object>） -->
+    <response type="list" />
     <!-- 支持按照规则拼装Map返回 -->
     <response type="map">
-        <value name="idList" ref="result_1" />
-        <value name="userInfo" ref="result_2" />
+        <value name="idList" ref="query1" />
+        <value name="userInfo" ref="result_3" />
     </response>
 </service>
