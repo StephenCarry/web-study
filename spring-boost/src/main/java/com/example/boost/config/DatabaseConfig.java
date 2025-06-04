@@ -1,6 +1,9 @@
 package com.example.boost.config;
 
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
+import com.example.boost.config.mybatis.TestInterceptor;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -72,6 +75,9 @@ public class DatabaseConfig {
     public SqlSessionFactory createSqlSessionFactory(@Autowired DataSource dataSource) throws Exception {
         MybatisSqlSessionFactoryBean sqlSessionFactoryBean = new MybatisSqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        interceptor.addInnerInterceptor(new TestInterceptor());
+        sqlSessionFactoryBean.setPlugins(interceptor);
         return sqlSessionFactoryBean.getObject();
     }
     @Value("${spring.datasource.url}")

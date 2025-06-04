@@ -3,6 +3,11 @@ package com.example.boost.dao;
 import com.example.boost.entry.UserLogin;
 import com.example.boost.mapper.UserLoginMapper;
 import com.example.boost.config.DatabaseConfig;
+import org.apache.ibatis.executor.Executor;
+import org.apache.ibatis.mapping.MappedStatement;
+import org.apache.ibatis.session.*;
+import org.apache.ibatis.transaction.Transaction;
+import org.apache.ibatis.transaction.managed.ManagedTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,8 +17,10 @@ import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.*;
+import java.util.concurrent.*;
 
 @Component
 public class UserLoginDao {
@@ -26,6 +33,8 @@ public class UserLoginDao {
     PlatformTransactionManager txManager;
     @Autowired
     UserLoginMapper userLoginMapper;
+    @Autowired
+    SqlSessionFactory sqlSessionFactory;
 
     public List<UserLogin> queryList() {
         return userLoginMapper.query();
@@ -137,5 +146,19 @@ public class UserLoginDao {
 
     public List<UserLogin> queryListByPlus() {
         return userLoginMapper.selectList(null);
+    }
+
+    public List<UserLogin> queryListBySession() {
+        // 查询数据
+        List<UserLogin> list;
+        Map<String, Object> map = new HashMap<>();
+        try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
+            list = sqlSession.selectList("com.example.boost.mapper.UserLoginMapper.query", map);
+            Future<Long> future = (Future<Long>) map.get("future");
+            System.out.println("count is: " + future.get());
+        } catch (Exception e) {
+            throw  new RuntimeException(e);
+        }
+        return list;
     }
 }

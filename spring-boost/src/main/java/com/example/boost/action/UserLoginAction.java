@@ -29,7 +29,7 @@ public class UserLoginAction {
     @RequestMapping("/query")
     @ResponseBody
     public List getList() {
-        return userLoginService.queryList();
+        return userLoginDao.queryListBySession();
     }
 
     @RequestMapping("/insert")

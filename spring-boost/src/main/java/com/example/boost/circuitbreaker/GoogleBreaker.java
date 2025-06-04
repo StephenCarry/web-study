@@ -24,32 +24,35 @@ public class GoogleBreaker {
 
     public void doRequest(String name, ProceedingJoinPoint point) {
         long startTime = System.currentTimeMillis();;
+        boolean accept = true;
         try {
-            boolean accept = this.accept(name);
+            accept = this.accept(name);
             if (!accept) {
                 throw new RuntimeException("熔断");
             }
 
             point.proceed();
-        } catch (Throwable throwable) {
-            throw new RuntimeException(throwable);
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
         } finally {
             long endTime = System.currentTimeMillis();
-            // 判断本次是上报成功还是失败
-            long costTime = endTime - startTime;
-            if (costTime < 1) {
-                costTime = 1;
-            }
-            RollingWindow rw = this.rollingWindow(name);
-            Stat stat = rw.reduce();
-            long total = stat.getTotal();
-            int expNum = (int) ((60 * 1000 / costTime) * 3 * 0.8);
-            // 测试打印
-            System.out.println("costTime=["+costTime+"], total=["+total+"], expNum=["+expNum+"]");
-            if (total < expNum) {
-                this.success(name);
-            } else {
-                this.failed(name);
+            if (accept) {
+                // 判断本次是上报成功还是失败
+                long costTime = endTime - startTime;
+                if (costTime < 1) {
+                    costTime = 1;
+                }
+                RollingWindow rw = this.rollingWindow(name);
+                Stat stat = rw.reduce();
+                long total = stat.getTotal();
+                int expNum = (int) ((60 * 1000 / costTime) * 3 * 0.8);
+                // 测试打印
+                System.out.println("costTime=["+costTime+"], total=["+total+"], expNum=["+expNum+"]");
+                if (total < expNum) {
+                    this.success(name);
+                } else {
+                    this.failed(name);
+                }
             }
         }
 
